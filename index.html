@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="falling-star.png">
+    <title>Starfield</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .main-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+        }
+
+        .info-holder{
+            text-align: center;
+            padding-bottom: 15px;
+            margin: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        h1{
+            color: white;
+            margin-bottom: 0%;
+            padding-bottom: 5px;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        p{
+            color: white;
+            padding: 20px;
+            font-family: 'Corben', cursive;
+            letter-spacing: 0.2rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;            
+            padding: 10px;
+            font-family: 'Orbitron', sans-serif;
+            font: bold;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="info-holder">
+            <h1>S T A R F I E L D</h1>
+            <p>The development of the background is in <strong>pure javascript</strong>.
+                <br>Reloading of the page leads to the new direction of the stars.
+                <br>On resizing the window screen, the size of the stars also changes.
+            </p>
+            <a href="#">&#x226A; C o d e &#x226B;</a>
+        </div>
+    </div>
+
+    <canvas></canvas>
+    <script src="script.js"></script>   
+</body>
+</html>
